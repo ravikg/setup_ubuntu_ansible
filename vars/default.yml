@@ -1,0 +1,5 @@
+---
+create_user: ravi
+copy_local_key: "{{ lookup('file', lookup('env','HOME') + '/.ssh/id_ed25519.pub') }}"
+sys_packages: [ 'curl', 'vim', 'git', 'ufw']
+rackhost_ip: "{{ lookup('env', 'RACKHOSTIP') }}"
